@@ -1,0 +1,2029 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family:'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+    
+}
+
+.big-header-wrapper{
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.826) 0,rgba(0, 0, 0, 0.045) 60%,rgba(0, 0, 0, 0.085) 75%,rgba(0, 0, 0, 0.634) 100%),url(/Netflix_Project/img/spiderheadvideo.gif);
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+    
+}
+.header-wrapper{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+   
+}
+.top-header{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.nav_logo{
+    width: 80%;
+}
+.top-left-list{
+    width: 80%;
+}
+
+.list-left{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+   
+    
+}
+.drop-new{
+    display: none;
+}
+.menu-div{
+    display: none;
+}
+.drop-media{
+   
+    color: white;
+    margin-top: 12px;
+}
+.list-item:nth-child(1){
+    color: white;
+}
+.list-item{
+    color: #e5e5e5;
+    font-size: 14px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.list-item:hover{
+    color: #b3b3b3;
+}
+
+.list-right{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    margin-left: 180px ;
+}
+.search{
+    display: flex;
+}
+.right-list-item{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.right-list-item img{
+    width: 12%;
+}
+.drop-down{
+    display: flex;
+}
+.drop-arrow{
+    color: white;
+    margin-top: 12px;
+}
+.drop-arrow-rotate{
+    transform: rotate(180deg);
+}
+.button-search,.button-notification {
+    border: none;
+    outline: none;
+    background: none;
+    
+}
+.button-notification i,.button-search i{
+    font-size: 20px;
+    color: white;
+}
+.button-search-display{
+    font-size: 5px;
+    transform: translate(60%,-10%);
+}
+.button-search,.button-notification{
+    margin-top: 15px;
+    cursor: pointer;
+}
+.content-input{
+    height: 25px;
+    margin-top: 10px;
+    display: none;
+    background-color: #141414;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    
+}
+.content-input[placeholder]{
+    text-align: center;
+}
+.display{
+    display: block;
+    border: 1px solid white;
+}
+.notifications-and-accounts-div{
+    width: 100%;
+    
+}
+.notifications{
+    background: rgba(0, 0, 0, 0.9);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid white;
+    transform: translateX(230%);
+    display: none;
+    position:absolute;
+    
+    
+}
+.first-notification{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(34,34,34) ;
+    height: 70px;
+    cursor: pointer;
+}
+.first-notification:hover{
+    background-color: black;
+}
+.first{
+    width: 30%;
+    margin: 5px 0;
+}
+.notification-explanation{
+    color: #e5e5e5;
+}
+.accounts{
+    background: rgba(0, 0, 0, 0.9);
+    width:200px;
+    height: 425px;
+    transform: translateX(520%);
+    display: none;
+    position: absolute;
+   
+}
+.accounts-list{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(34,34,34);
+    justify-content: start;
+    padding: 5px;
+   
+
+}
+.account-list-item{
+    display: flex;
+    margin-bottom: 5px;
+   
+    list-style-type: none;
+    color: white;
+    cursor: pointer;
+}
+.account-list-item p:hover,.setting-list-item p:hover,.accounts p:hover{
+    text-decoration: underline;
+}
+.users-img{
+    width: 25%;
+    margin-right: 8px;
+}
+.pencil{
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 10px;
+    font-size: 18px;
+    
+}
+.settings-list{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(34,34,34);
+    padding: 5px;
+}
+.setting-list-item{
+    display: flex;
+    list-style-type: none;
+    color: white;
+    cursor: pointer;
+}
+.user,.question{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+.user-account,.help-center{
+    margin-left: 15px;
+}
+.sign-out{
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.movie-title{
+    width: 35%;
+    margin-left: 30px;
+    margin-top: 160px;
+}
+.left-img{
+    width: 100%;
+}
+.explanation{
+    color: #fff;
+}
+.header-bottom-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.play-buttons{
+    display: flex;
+    
+}
+.play-button{
+    background: white;
+    outline: none;
+    border-color: white;
+    border-radius: 5px;
+    width: 130px;
+    height: 40px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.play-button:hover{
+    background-color: #e5e5e5;
+}
+.show-more-info:hover{
+    background-color:rgba(109, 109, 110, 0.7);
+}
+.show-more-info{
+    background: grey;
+    border-color: grey;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    width:240px;
+    height: 40px;
+    font-size: 1.4rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.show-more-info i{
+  
+  font-size: 1.3rem;
+   
+}
+.maternity-age{
+    transform: translateX(1235%);
+    border-left: 2px solid white;
+    height: 17px;
+}
+.age{
+    color: white;
+    background-color: grey;
+    padding-right: 30px;
+    padding-left: 15px;
+    
+}
+.scroll{
+    position: fixed;
+    top:0;
+    z-index: 1;
+    background-color: black;
+    width: 100%;
+    
+}
+.scroll2{
+    position: fixed;
+    top: 75px;
+    z-index: 50;
+    background-color: black;
+    width: 100%;
+    
+}
+.movie-cards{
+    margin-top: 100px;
+}
+.movie-cards-title{
+    margin-left: 10px;
+}
+.movie-cards1{
+    margin-top: 100px;
+}
+.title{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.cards{
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+}
+.left-panel,.left-panel1,.right-panel,.right-panel1{
+    display: flex;
+    position: relative;
+}
+.card1,.card2,.card3,.card4,.card5,.card6,
+.card7,.card8,.card9,.card10,.card11{
+    margin-left: 15px;
+    margin-right:5px;
+    width: 25%;
+    
+    z-index: 5;
+    
+}
+.card12,
+.card13,.card14,.card15,.card16,.card17,.card18,
+.card19,.card20,.card21,.card22{
+    margin-left: 10px;
+    margin-right:5px;
+    width: 25%;
+    z-index: 5;
+    
+}
+.card-index{
+    z-index:6
+}
+.card1-img,.card2-img,.card3-img,.card4-img,.card5-img,.card6-img,
+.card7-img,.card8-img,.card9-img,.card10-img,.card11-img,.card12-img,
+.card13-img,.card14-img,.card15-img,.card16-img, .card17-img,.card18-img,
+.card19-img,.card20-img,.card21-img,.card22-img{
+    width: 245px;
+    border-radius: 5px;
+}
+.angle-right,.angle-right1{
+    position: absolute;
+    z-index: 7;
+    margin-top: 70px;
+    margin-left: 1395px;
+   
+}
+
+.angle-left,.angle-left1{
+    position: absolute;
+    z-index: 7;
+    margin-top: 70px;
+    margin-left: 20px;
+   
+    
+}
+/* .angle-left-button,.angle-right-button,.angle-left-button1,.angle-right-button1{
+   opacity: 0;
+} */
+.arrow,.arrow1{
+   /* transform: scale(2); */
+   color: white;
+   cursor: pointer;
+}
+/* .angle-right:hover,.angle-left:hover,.angle-right1:hover,.angle-left1:hover{
+    transform: scale(1.5);
+    
+} */
+.angle-left-button:hover,.angle-right-button:hover,.angle-left-button1:hover,
+.angle-right-button1:hover{
+   opacity: 1;
+}
+
+
+.middle-wrapper{
+    margin-top: -100px;
+    background-color: #141414;
+    height: 70vh;
+    z-index: 0;
+}
+
+.cards1{
+    margin-top: 50px;
+}
+.movie-cards-title1{
+    transform: translateY(100%);
+  
+}
+
+.card-bottom1,.card-bottom2,.card-bottom3,.card-bottom4,.card-bottom5,
+.card-bottom6,.card-bottom7,.card-bottom8,.card-bottom9,.card-bottom10,
+.card-bottom11,.card-bottom12,.card-bottom13,.card-bottom14,.card-bottom15,
+.card-bottom16,.card-bottom17,.card-bottom18,.card-bottom19,.card-bottom20,
+.card-bottom21,.card-bottom22{
+    display: flex;
+    flex-direction: column;
+    background-color: #141414;
+    width: 245px;
+    height: 200px;
+    display: none;
+    border-radius: 5px;
+    /* position: relative; */
+    z-index: 6;
+    margin-top: -5px;
+}
+.icon-div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.play-bottom,.plus-bottom,
+.thumbs-up-bottom,.drop-down-bottom{
+    color: black;
+    
+}
+.plus-bottom,
+.thumbs-up-bottom,.drop-down-bottom{
+    color:white
+}
+.play-bottom-div{
+    border: 4px solid white;
+    border-radius: 50%;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    margin-top: 6px;
+}
+.play-bottom,.plus-bottom,
+.thumbs-up-bottom{
+    font-size: 30px;
+    margin-right: 15px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+.play-bottom{
+    font-size: 15px;
+    transform: translate(25%,-15%);
+}
+.drop-down-bottom{
+    transform: scale(1.5);
+    padding: 10px 20px;
+}
+.first-div{
+    display: flex;
+}
+.p-div{
+    display: flex;
+    justify-content: center;
+}
+.p1,.p2,.p3{
+    margin-right: 8px;
+}
+.p1-inside{
+    color: green;
+    font-size: 12px;
+}
+.p2-inside,.p4-inside{
+    border: 1px solid white;
+    color: white;
+    font-size: 12px;
+}
+.p3-inside{
+    color: white;
+    font-size: 12px;
+}
+.subject-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.subject-list-item{
+    font-size: 12px;
+    white-space: nowrap;
+    color: white;
+    
+}
+
+.card-bottom-scale{
+    transform: scale(1.1);
+}
+
+@media screen and (min-width:491px) and (max-width:576px) {
+    .big-header-wrapper{
+        background: linear-gradient(to bottom,rgba(0, 0, 0, 0.826) 0,rgba(0, 0, 0, 0.045) 60%,rgba(0, 0, 0, 0.085) 75%,rgba(0, 0, 0, 0.634) 100%),url(https://cdn.kayiprihtim.com/wp-content/uploads/2022/05/Spiderhead-fragman-758x403.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 50vh;
+    }
+   
+    .movie-title{
+        margin-top: 0;
+    }
+    .left-img{
+        width: 50%;
+    }
+    .menu-div{
+        display: flex;
+    }
+    .list-left{
+        display: none;
+    }
+    .drop-new{
+        transform: translateY(30%);
+    }
+    .content-input{
+        position: absolute;
+        transform: translate(-90%,-10%);
+    }
+    .button-search-display2{
+     
+        font-size: 5px;
+        transform: translate(-500%,-10%);
+        z-index: 2;
+       
+    }
+    .explanation{
+       font-size: 8px;
+    }
+    .drop-down-look{
+        display: flex;
+        cursor: pointer;
+    }
+    .drop-down-look p{
+        color: white;
+        font-size: 10px;
+        margin-left: 5px;
+        margin-top: 17px;
+    }
+    .drop-new{
+        background: rgba(0, 0, 0, 0.9);
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid white;
+        position:absolute;
+        display: none;
+        
+    }
+    .drop-item{
+        list-style-type: none;
+        font-size: 14px;
+        margin-left: -30px;
+        white-space: nowrap;
+        text-align: center;
+        cursor: pointer;
+     
+    }
+    .play-button{
+        width:100px;
+        height: 30px;
+        font-size: 10px;
+        
+        text-align: center;
+    }
+   
+    .show-more-info{
+        width: 110px;
+        height: 30px;
+        white-space: nowrap;
+        font-size: 8px;
+        text-align: center;
+    }
+    .show-more-info i{
+        font-size: 1rem;
+    }
+    .notifications{
+        transform: translateX(10%);
+        z-index: 10;
+    }
+    .accounts{
+        transform: translateX(150%);
+        z-index: 10;
+    }
+    .title{
+        font-size: 10px;
+    }
+    .card1,.card2,.card3,.card4,.card5,.card6,
+.card7,.card8,.card9,.card10,.card11,.card12,
+.card13,.card14,.card15,.card16,.card17,.card18,
+.card19,.card20,.card21,.card22{
+    margin-left: 10px;
+    right: 0;
+}
+    .card1-img,.card2-img,.card3-img,.card4-img,.card5-img,
+    .card6-img, .card7-img, .card8-img, .card9-img,.card10-img,
+    .card11-img, .card12-img, .card13-img,.card14-img,.card15-img,
+    .card16-img, .card17-img, .card18-img,.card19-img,.card20-img,
+    .card21-img,.card22-img{
+        width: 140px;
+    }
+   .img-490px{
+    width: 240px;
+   }
+  
+   .arrow,.arrow1{
+    transform: scale(1);
+   }
+    
+    .angle-left-button,.angle-right-button,.angle-left-button1,.angle-right-button1{
+     z-index: 8;
+        opacity: 1;
+        
+     }
+    .angle-left,.angle-left1{
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+   
+    .angle-right,.angle-right1{
+        margin-left: 465px;
+       transform: translateY(-140%);
+        
+    }
+    .movie-cards{
+        margin-top: 70px;
+    }
+    .movie-cards1{
+        margin-top: 100px;
+    }
+    .middle-wrapper{
+        height: 50vh;
+    }
+    .title1{
+        transform: translateY(150%);
+    }
+   
+    }
+    @media screen and (min-width:577px) and (max-width:600px) {
+        .big-header-wrapper{
+            background: linear-gradient(to bottom,rgba(0, 0, 0, 0.826) 0,rgba(0, 0, 0, 0.045) 60%,rgba(0, 0, 0, 0.085) 75%,rgba(0, 0, 0, 0.634) 100%),url(https://cdn.kayiprihtim.com/wp-content/uploads/2022/05/Spiderhead-fragman-758x403.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 50vh;
+        }
+       
+        .movie-title{
+            margin-top: 0;
+        }
+        .left-img{
+            width: 50%;
+        }
+        .menu-div{
+            display: flex;
+        }
+        .list-left{
+            display: none;
+        }
+        .drop-new{
+            transform: translateY(30%);
+        }
+        .content-input{
+            position: absolute;
+            transform: translate(-90%,-10%);
+        }
+        .button-search-display2{
+         
+            font-size: 5px;
+            transform: translate(-500%,-10%);
+            z-index: 2;
+           
+        }
+        .explanation{
+           font-size: 8px;
+        }
+        .drop-down-look{
+            display: flex;
+            cursor: pointer;
+        }
+        .drop-down-look p{
+            color: white;
+            font-size: 10px;
+            margin-left: 5px;
+            margin-top: 17px;
+        }
+        .drop-new{
+            background: rgba(0, 0, 0, 0.9);
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid white;
+            position:absolute;
+            display: none;
+            
+        }
+        .drop-item{
+            list-style-type: none;
+            font-size: 14px;
+            margin-left: -30px;
+            white-space: nowrap;
+            text-align: center;
+            cursor: pointer;
+         
+        }
+        .play-button{
+            width:100px;
+            height: 30px;
+            font-size: 10px;
+            
+            text-align: center;
+        }
+       
+        .show-more-info{
+            width: 110px;
+            height: 30px;
+            white-space: nowrap;
+            font-size: 8px;
+            text-align: center;
+        }
+        .show-more-info i{
+            font-size: 1rem;
+        }
+        .notifications{
+            transform: translateX(20%);
+            z-index: 10;
+        }
+        .accounts{
+            transform: translateX(170%);
+            z-index: 10;
+        }
+        .title{
+            font-size: 10px;
+        }
+        .card1,.card2,.card3,.card4,.card5,.card6,
+    .card7,.card8,.card9,.card10,.card11,.card12,
+    .card13,.card14,.card15,.card16,.card17,.card18,
+    .card19,.card20,.card21,.card22{
+        margin-left: 10px;
+        right: 0;
+    }
+        .card1-img,.card2-img,.card3-img,.card4-img,.card5-img,
+        .card6-img, .card7-img, .card8-img, .card9-img,.card10-img,
+        .card11-img, .card12-img, .card13-img,.card14-img,.card15-img,
+        .card16-img, .card17-img, .card18-img,.card19-img,.card20-img,
+        .card21-img,.card22-img{
+            width: 140px;
+        }
+       .img-490px{
+        width: 240px;
+       }
+      
+       /* .arrow,.arrow1{
+        transform: scale(1);
+       } */
+        
+        .angle-left-button,.angle-right-button,.angle-left-button1,.angle-right-button1{
+         z-index: 8;
+            opacity: 1;
+            
+         }
+        .angle-left,.angle-left1{
+            margin-top: 25px;
+            margin-left: 10px;
+        }
+        .angle-right,.angle-right1{
+            margin-left: 455px;
+           transform: translateY(-140%);
+            
+        }
+        /* .angle-left:hover,.angle-left1:hover,.angle-right:hover,.angle-right1:hover{
+            transform: scale(1);
+            } */
+        .movie-cards{
+            margin-top: 70px;
+        }
+        .movie-cards1{
+            margin-top: 100px;
+        }
+        .middle-wrapper{
+            height: 50vh;
+        }
+        .title1{
+            transform: translateY(150%);
+        }}
+
+        @media screen and (min-width:601px) and (max-width:640px) {
+            .big-header-wrapper{
+                background: linear-gradient(to bottom,rgba(0, 0, 0, 0.826) 0,rgba(0, 0, 0, 0.045) 60%,rgba(0, 0, 0, 0.085) 75%,rgba(0, 0, 0, 0.634) 100%),url(https://cdn.kayiprihtim.com/wp-content/uploads/2022/05/Spiderhead-fragman-758x403.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                height: 50vh;
+            }
+           
+            .movie-title{
+                margin-top: 0;
+            }
+            .left-img{
+                width: 50%;
+            }
+            .menu-div{
+                display: flex;
+            }
+            .list-left{
+                display: none;
+            }
+            .drop-new{
+                transform: translateY(30%);
+            }
+            .content-input{
+                position: absolute;
+                transform: translate(-90%,-10%);
+            }
+            .button-search-display2{
+             
+                font-size: 5px;
+                transform: translate(-500%,-10%);
+                z-index: 2;
+               
+            }
+            .explanation{
+               font-size: 8px;
+            }
+            .drop-down-look{
+                display: flex;
+                cursor: pointer;
+            }
+            .drop-down-look p{
+                color: white;
+                font-size: 10px;
+                margin-left: 5px;
+                margin-top: 17px;
+            }
+            .drop-new{
+                background: rgba(0, 0, 0, 0.9);
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                border-top: 1px solid white;
+                position:absolute;
+                display: none;
+                
+            }
+            .drop-item{
+                list-style-type: none;
+                font-size: 14px;
+                margin-left: -30px;
+                white-space: nowrap;
+                text-align: center;
+                cursor: pointer;
+             
+            }
+            .play-button{
+                width:100px;
+                height: 30px;
+                font-size: 10px;
+                
+                text-align: center;
+            }
+           
+            .show-more-info{
+                width: 110px;
+                height: 30px;
+                white-space: nowrap;
+                font-size: 8px;
+                text-align: center;
+            }
+            .show-more-info i{
+                font-size: 1rem;
+            }
+            .notifications{
+                transform: translateX(30%);
+                z-index: 10;
+            }
+            .accounts{
+                transform: translateX(190%);
+                z-index: 10;
+            }
+            .title{
+                font-size: 10px;
+            }
+            .card1,.card2,.card3,.card4,.card5,.card6,
+        .card7,.card8,.card9,.card10,.card11,.card12,
+        .card13,.card14,.card15,.card16,.card17,.card18,
+        .card19,.card20,.card21,.card22{
+            margin-left: 10px;
+            right: 0;
+        }
+            .card1-img,.card2-img,.card3-img,.card4-img,.card5-img,
+            .card6-img, .card7-img, .card8-img, .card9-img,.card10-img,
+            .card11-img, .card12-img, .card13-img,.card14-img,.card15-img,
+            .card16-img, .card17-img, .card18-img,.card19-img,.card20-img,
+            .card21-img,.card22-img{
+                width: 140px;
+            }
+           .img-490px{
+            width: 240px;
+           }
+          
+           /* .arrow,.arrow1{
+            transform: scale(1);
+           } */
+            
+            .angle-left-button,.angle-right-button,.angle-left-button1,.angle-right-button1{
+             z-index: 8;
+                opacity: 1;
+                
+             }
+            .angle-left,.angle-left1{
+                margin-top: 25px;
+                margin-left: 10px;
+            }
+            .angle-right,.angle-right1{
+                margin-left: 480px;
+               transform: translateY(-140%);
+                
+            }
+            /* .angle-left:hover,.angle-left1:hover,.angle-right:hover,.angle-right1:hover{
+                transform: scale(1);
+                } */
+            .movie-cards{
+                margin-top: 70px;
+            }
+            .movie-cards1{
+                margin-top: 100px;
+            }
+            .middle-wrapper{
+                height: 50vh;
+            }
+            .title1{
+                transform: translateY(150%);
+            }}
+
+        @media screen and (min-width:641px) and (max-width:690px) {
+            .big-header-wrapper{
+                background: linear-gradient(to bottom,rgba(0, 0, 0, 0.826) 0,rgba(0, 0, 0, 0.045) 60%,rgba(0, 0, 0, 0.085) 75%,rgba(0, 0, 0, 0.634) 100%),url(https://cdn.kayiprihtim.com/wp-content/uploads/2022/05/Spiderhead-fragman-758x403.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                height: 50vh;
+            }
+           
+            .movie-title{
+                margin-top: 0;
+            }
+            .left-img{
+                width: 50%;
+            }
+            .menu-div{
+                display: flex;
+            }
+            .list-left{
+                display: none;
+            }
+            .drop-new{
+                transform: translateY(30%);
+            }
+            .content-input{
+                position: absolute;
+                transform: translate(-90%,-10%);
+            }
+            .button-search-display2{
+             
+                font-size: 5px;
+                transform: translate(-500%,-10%);
+                z-index: 2;
+               
+            }
+            .explanation{
+               font-size: 8px;
+            }
+            .drop-down-look{
+                display: flex;
+                cursor: pointer;
+            }
+            .drop-down-look p{
+                color: white;
+                font-size: 10px;
+                margin-left: 5px;
+                margin-top: 17px;
+            }
+            .drop-new{
+                background: rgba(0, 0, 0, 0.9);
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                border-top: 1px solid white;
+                position:absolute;
+                display: none;
+                
+            }
+            .drop-item{
+                list-style-type: none;
+                font-size: 14px;
+                margin-left: -30px;
+                white-space: nowrap;
+                text-align: center;
+                cursor: pointer;
+             
+            }
+            .play-button{
+                width:100px;
+                height: 30px;
+                font-size: 10px;
+                
+                text-align: center;
+            }
+           
+            .show-more-info{
+                width: 110px;
+                height: 30px;
+                white-space: nowrap;
+                font-size: 8px;
+                text-align: center;
+            }
+            .show-more-info i{
+                font-size: 1rem;
+            }
+            .notifications{
+                transform: translateX(50%);
+                z-index: 10;
+            }
+            .accounts{
+                transform: translateX(200%);
+                z-index: 10;
+            }
+            .title{
+                font-size: 10px;
+            }
+            .card1,.card2,.card3,.card4,.card5,.card6,
+        .card7,.card8,.card9,.card10,.card11,.card12,
+        .card13,.card14,.card15,.card16,.card17,.card18,
+        .card19,.card20,.card21,.card22{
+            margin-left: 10px;
+            right: 0;
+        }
+            .card1-img,.card2-img,.card3-img,.card4-img,.card5-img,
+            .card6-img, .card7-img, .card8-img, .card9-img,.card10-img,
+            .card11-img, .card12-img, .card13-img,.card14-img,.card15-img,
+            .card16-img, .card17-img, .card18-img,.card19-img,.card20-img,
+            .card21-img,.card22-img{
+                width: 140px;
+            }
+           .img-490px{
+            width: 240px;
+           }
+          
+           /* .arrow,.arrow1{
+            transform: scale(1);
+           } */
+            
+            .angle-left-button,.angle-right-button,.angle-left-button1,.angle-right-button1{
+             z-index: 8;
+                opacity: 1;
+                
+             }
+            .angle-left,.angle-left1{
+                margin-top: 25px;
+                margin-left: 10px;
+            }
+            .angle-right,.angle-right1{
+                margin-left: 520px;
+               transform: translateY(-140%);
+                
+            }
+            /* .angle-left:hover,.angle-left1:hover,.angle-right:hover,.angle-right1:hover{
+                transform: scale(1);
+                } */
+            .movie-cards{
+                margin-top: 70px;
+            }
+            .movie-cards1{
+                margin-top: 100px;
+            }
+            .middle-wrapper{
+                height: 50vh;
+            }
+            .title1{
+                transform: translateY(150%);
+            }}
+
+        @media screen and (min-width:691px) and (max-width:730px) {
+            .big-header-wrapper{
+                background: linear-gradient(to bottom,rgba(0, 0, 0, 0.826) 0,rgba(0, 0, 0, 0.045) 60%,rgba(0, 0, 0, 0.085) 75%,rgba(0, 0, 0, 0.634) 100%),url(https://cdn.kayiprihtim.com/wp-content/uploads/2022/05/Spiderhead-fragman-758x403.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                height: 50vh;
+            }
+           
+            .movie-title{
+                margin-top: 0;
+            }
+            .left-img{
+                width: 50%;
+            }
+            .menu-div{
+                display: flex;
+            }
+            .list-left{
+                display: none;
+            }
+            .drop-new{
+                transform: translateY(30%);
+            }
+            .content-input{
+                position: absolute;
+                transform: translate(-90%,-10%);
+            }
+            .button-search-display2{
+             
+                font-size: 5px;
+                transform: translate(-500%,-10%);
+                z-index: 2;
+               
+            }
+            .explanation{
+               font-size: 8px;
+            }
+            .drop-down-look{
+                display: flex;
+                cursor: pointer;
+            }
+            .drop-down-look p{
+                color: white;
+                font-size: 10px;
+                margin-left: 5px;
+                margin-top: 17px;
+            }
+            .drop-new{
+                background: rgba(0, 0, 0, 0.9);
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                border-top: 1px solid white;
+                position:absolute;
+                display: none;
+                
+            }
+            .drop-item{
+                list-style-type: none;
+                font-size: 14px;
+                margin-left: -30px;
+                white-space: nowrap;
+                text-align: center;
+                cursor: pointer;
+             
+            }
+            .play-button{
+                width:100px;
+                height: 30px;
+                font-size: 10px;
+                
+                text-align: center;
+            }
+           
+            .show-more-info{
+                width: 110px;
+                height: 30px;
+                white-space: nowrap;
+                font-size: 8px;
+                text-align: center;
+            }
+            .show-more-info i{
+                font-size: 1rem;
+            }
+            .notifications{
+                transform: translateX(70%);
+                z-index: 10;
+            }
+            .accounts{
+                transform: translateX(210%);
+                z-index: 10;
+            }
+            .title{
+                font-size: 10px;
+            }
+            .card1,.card2,.card3,.card4,.card5,.card6,
+        .card7,.card8,.card9,.card10,.card11,.card12,
+        .card13,.card14,.card15,.card16,.card17,.card18,
+        .card19,.card20,.card21,.card22{
+            margin-left: 10px;
+            right: 0;
+        }
+            .card1-img,.card2-img,.card3-img,.card4-img,.card5-img,
+            .card6-img, .card7-img, .card8-img, .card9-img,.card10-img,
+            .card11-img, .card12-img, .card13-img,.card14-img,.card15-img,
+            .card16-img, .card17-img, .card18-img,.card19-img,.card20-img,
+            .card21-img,.card22-img{
+                width: 140px;
+            }
+           .img-490px{
+            width: 240px;
+           }
+          
+           /* .arrow,.arrow1{
+            transform: scale(1);
+           } */
+            
+            .angle-left-button,.angle-right-button,.angle-left-button1,.angle-right-button1{
+             z-index: 8;
+                opacity: 1;
+                
+             }
+            .angle-left,.angle-left1{
+                margin-top: 25px;
+                margin-left: 10px;
+            }
+            .angle-right,.angle-right1{
+                margin-left: 550px;
+               transform: translateY(-140%);
+                
+            }
+            /* .angle-left:hover,.angle-left1:hover,.angle-right:hover,.angle-right1:hover{
+                transform: scale(1);
+                } */
+            .movie-cards{
+                margin-top: 70px;
+            }
+            .movie-cards1{
+                margin-top: 100px;
+            }
+            .middle-wrapper{
+                height: 50vh;
+            }
+            .title1{
+                transform: translateY(150%);
+            }}
+            @media screen and (min-width:731px) and (max-width:770px) {
+                .big-header-wrapper{
+                    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.826) 0,rgba(0, 0, 0, 0.045) 60%,rgba(0, 0, 0, 0.085) 75%,rgba(0, 0, 0, 0.634) 100%),url(https://cdn.kayiprihtim.com/wp-content/uploads/2022/05/Spiderhead-fragman-758x403.jpg);
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    height: 50vh;
+                }
+               
+                .movie-title{
+                    margin-top: 0;
+                }
+                .left-img{
+                    width: 50%;
+                }
+                .menu-div{
+                    display: flex;
+                }
+                .list-left{
+                    display: none;
+                }
+                .drop-new{
+                    transform: translateY(30%);
+                }
+                .content-input{
+                    position: absolute;
+                    transform: translate(-90%,-10%);
+                }
+                .button-search-display2{
+                 
+                    font-size: 5px;
+                    transform: translate(-500%,-10%);
+                    z-index: 2;
+                   
+                }
+                .explanation{
+                   font-size: 8px;
+                }
+                .drop-down-look{
+                    display: flex;
+                    cursor: pointer;
+                }
+                .drop-down-look p{
+                    color: white;
+                    font-size: 10px;
+                    margin-left: 5px;
+                    margin-top: 17px;
+                }
+                .drop-new{
+                    background: rgba(0, 0, 0, 0.9);
+                    width: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    border-top: 1px solid white;
+                    position:absolute;
+                    display: none;
+                    
+                }
+                .drop-item{
+                    list-style-type: none;
+                    font-size: 14px;
+                    margin-left: -30px;
+                    white-space: nowrap;
+                    text-align: center;
+                    cursor: pointer;
+                 
+                }
+                .play-button{
+                    width:100px;
+                    height: 30px;
+                    font-size: 10px;
+                    
+                    text-align: center;
+                }
+               
+                .show-more-info{
+                    width: 110px;
+                    height: 30px;
+                    white-space: nowrap;
+                    font-size: 8px;
+                    text-align: center;
+                }
+                .show-more-info i{
+                    font-size: 1rem;
+                }
+                .notifications{
+                    transform: translateX(70%);
+                    z-index: 10;
+                }
+                .accounts{
+                    transform: translateX(210%);
+                    z-index: 10;
+                }
+                .title{
+                    font-size: 10px;
+                }
+                .card1,.card2,.card3,.card4,.card5,.card6,
+            .card7,.card8,.card9,.card10,.card11,.card12,
+            .card13,.card14,.card15,.card16,.card17,.card18,
+            .card19,.card20,.card21,.card22{
+                margin-left: 10px;
+                right: 0;
+            }
+                .card1-img,.card2-img,.card3-img,.card4-img,.card5-img,
+                .card6-img, .card7-img, .card8-img, .card9-img,.card10-img,
+                .card11-img, .card12-img, .card13-img,.card14-img,.card15-img,
+                .card16-img, .card17-img, .card18-img,.card19-img,.card20-img,
+                .card21-img,.card22-img{
+                    width: 140px;
+                }
+               .img-490px{
+                width: 240px;
+               }
+              
+               /* .arrow,.arrow1{
+                transform: scale(1);
+               } */
+                
+                .angle-left-button,.angle-right-button,.angle-left-button1,.angle-right-button1{
+                 z-index: 8;
+                    opacity: 1;
+                    
+                 }
+                .angle-left,.angle-left1{
+                    margin-top: 25px;
+                    margin-left: 10px;
+                }
+                .angle-right,.angle-right1{
+                    margin-left: 590px;
+                   transform: translateY(-140%);
+                    
+                }
+                /* .angle-left:hover,.angle-left1:hover,.angle-right:hover,.angle-right1:hover{
+                    transform: scale(1);
+                    } */
+                .movie-cards{
+                    margin-top: 70px;
+                }
+                .movie-cards1{
+                    margin-top: 100px;
+                }
+                .middle-wrapper{
+                    height: 50vh;
+                }
+                .title1{
+                    transform: translateY(150%);
+                }}
+
+                @media screen and (min-width:771px) and (max-width:805px) {
+                    .big-header-wrapper{
+                        background: linear-gradient(to bottom,rgba(0, 0, 0, 0.826) 0,rgba(0, 0, 0, 0.045) 60%,rgba(0, 0, 0, 0.085) 75%,rgba(0, 0, 0, 0.634) 100%),url(https://cdn.kayiprihtim.com/wp-content/uploads/2022/05/Spiderhead-fragman-758x403.jpg);
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-size: cover;
+                        height: 50vh;
+                        
+                    }
+                   
+                    .movie-title{
+                        margin-top: 0;
+                    }
+                    .left-img{
+                        width: 50%;
+                    }
+                    .menu-div{
+                        display: flex;
+                    }
+                    .list-left{
+                        display: none;
+                    }
+                    .drop-new{
+                        transform: translateY(30%);
+                    }
+                    .content-input{
+                        position: absolute;
+                        transform: translate(-90%,-10%);
+                    }
+                    .button-search-display2{
+                     
+                        font-size: 5px;
+                        transform: translate(-500%,-10%);
+                        z-index: 2;
+                       
+                    }
+                    .explanation{
+                       font-size: 8px;
+                    }
+                    .drop-down-look{
+                        display: flex;
+                        cursor: pointer;
+                    }
+                    .drop-down-look p{
+                        color: white;
+                        font-size: 10px;
+                        margin-left: 5px;
+                        margin-top: 17px;
+                    }
+                    .drop-new{
+                        background: rgba(0, 0, 0, 0.9);
+                        width: 250px;
+                        display: flex;
+                        flex-direction: column;
+                        border-top: 1px solid white;
+                        position:absolute;
+                        display: none;
+                        
+                    }
+                    .drop-item{
+                        list-style-type: none;
+                        font-size: 14px;
+                        margin-left: -30px;
+                        white-space: nowrap;
+                        text-align: center;
+                        cursor: pointer;
+                     
+                    }
+                    .play-button{
+                        width:100px;
+                        height: 30px;
+                        font-size: 10px;
+                        
+                        text-align: center;
+                    }
+                   
+                    .show-more-info{
+                        width: 110px;
+                        height: 30px;
+                        white-space: nowrap;
+                        font-size: 8px;
+                        text-align: center;
+                    }
+                    .show-more-info i{
+                        font-size: 1rem;
+                    }
+                    .notifications{
+                        transform: translateX(70%);
+                        z-index: 10;
+                    }
+                    .accounts{
+                        transform: translateX(210%);
+                        z-index: 10;
+                    }
+                    .title{
+                        font-size: 10px;
+                    }
+                    .card1,.card2,.card3,.card4,.card5,.card6,
+                .card7,.card8,.card9,.card10,.card11,.card12,
+                .card13,.card14,.card15,.card16,.card17,.card18,
+                .card19,.card20,.card21,.card22{
+                    margin-left: 10px;
+                    right: 0;
+                  
+                }
+                .card12,
+                .card13,.card14,.card15,.card16,.card17,.card18,
+                .card19,.card20,.card21,.card22{
+                    margin-top: 40px;
+                }
+                    .card1-img,.card2-img,.card3-img,.card4-img,.card5-img,
+                    .card6-img, .card7-img, .card8-img, .card9-img,.card10-img,
+                    .card11-img, .card12-img, .card13-img,.card14-img,.card15-img,
+                    .card16-img, .card17-img, .card18-img,.card19-img,.card20-img,
+                    .card21-img,.card22-img{
+                        width: 200px;
+                    }
+                   .img-490px{
+                    width: 240px;
+                   }
+                  
+                   /* .arrow,.arrow1{
+                    transform: scale(1);
+                   } */
+                    
+                    .angle-left-button,.angle-right-button,.angle-left-button1,.angle-right-button1{
+                     z-index: 8;
+                        opacity: 1;
+                        
+                     }
+                    .angle-left,.angle-left1{
+                        margin-top: 45px;
+                        margin-left: 10px;
+                    }
+                    .angle-left1{
+                        margin-top: 85px;
+                    }
+                    .angle-right,.angle-right1{
+                        margin-left: 750px;
+                       transform: translateY(-100%);
+                        
+                    }
+                    .angle-right1{
+                        transform: translateY(50%);
+                    }
+                    /* .angle-left:hover,.angle-left1:hover,.angle-right:hover,.angle-right1:hover{
+                        transform: scale(1);
+                        } */
+                    .movie-cards{
+                        margin-top: 70px;
+                    }
+                    .movie-cards1{
+                        margin-top: 100px;
+                    }
+                    .middle-wrapper{
+                        height: 50vh;
+                    }
+                    .title1{
+                        transform: translateY(450%);
+                    }}
+
+                    @media screen and (min-width:806px) and (max-width:840px) {
+                        .big-header-wrapper{
+                            background: linear-gradient(to bottom,rgba(0, 0, 0, 0.826) 0,rgba(0, 0, 0, 0.045) 60%,rgba(0, 0, 0, 0.085) 75%,rgba(0, 0, 0, 0.634) 100%),url(https://cdn.kayiprihtim.com/wp-content/uploads/2022/05/Spiderhead-fragman-758x403.jpg);
+                            background-repeat: no-repeat;
+                            background-attachment: fixed;
+                            background-size: cover;
+                            height: 50vh;
+                            
+                        }
+                       
+                        .movie-title{
+                            margin-top: 0;
+                        }
+                        .left-img{
+                            width: 50%;
+                        }
+                        .menu-div{
+                            display: flex;
+                        }
+                        .list-left{
+                            display: none;
+                        }
+                        .drop-new{
+                            transform: translateY(30%);
+                        }
+                        .content-input{
+                            position: absolute;
+                            transform: translate(-90%,-10%);
+                        }
+                        .button-search-display2{
+                         
+                            font-size: 5px;
+                            transform: translate(-500%,-10%);
+                            z-index: 2;
+                           
+                        }
+                        .explanation{
+                           font-size: 8px;
+                        }
+                        .drop-down-look{
+                            display: flex;
+                            cursor: pointer;
+                        }
+                        .drop-down-look p{
+                            color: white;
+                            font-size: 10px;
+                            margin-left: 5px;
+                            margin-top: 17px;
+                        }
+                        .drop-new{
+                            background: rgba(0, 0, 0, 0.9);
+                            width: 250px;
+                            display: flex;
+                            flex-direction: column;
+                            border-top: 1px solid white;
+                            position:absolute;
+                            display: none;
+                            
+                        }
+                        .drop-item{
+                            list-style-type: none;
+                            font-size: 14px;
+                            margin-left: -30px;
+                            white-space: nowrap;
+                            text-align: center;
+                            cursor: pointer;
+                         
+                        }
+                        .play-button{
+                            width:100px;
+                            height: 30px;
+                            font-size: 10px;
+                            
+                            text-align: center;
+                        }
+                       
+                        .show-more-info{
+                            width: 110px;
+                            height: 30px;
+                            white-space: nowrap;
+                            font-size: 8px;
+                            text-align: center;
+                        }
+                        .show-more-info i{
+                            font-size: 1rem;
+                        }
+                        .notifications{
+                            transform: translateX(80%);
+                            z-index: 10;
+                        }
+                        .accounts{
+                            transform: translateX(220%);
+                            z-index: 10;
+                        }
+                        .title{
+                            font-size: 10px;
+                        }
+                        .card1,.card2,.card3,.card4,.card5,.card6,
+                    .card7,.card8,.card9,.card10,.card11,.card12,
+                    .card13,.card14,.card15,.card16,.card17,.card18,
+                    .card19,.card20,.card21,.card22{
+                        margin-left: 10px;
+                        right: 0;
+                      
+                    }
+                    .card12,
+                    .card13,.card14,.card15,.card16,.card17,.card18,
+                    .card19,.card20,.card21,.card22{
+                        margin-top: 40px;
+                    }
+                        .card1-img,.card2-img,.card3-img,.card4-img,.card5-img,
+                        .card6-img, .card7-img, .card8-img, .card9-img,.card10-img,
+                        .card11-img, .card12-img, .card13-img,.card14-img,.card15-img,
+                        .card16-img, .card17-img, .card18-img,.card19-img,.card20-img,
+                        .card21-img,.card22-img{
+                            width: 200px;
+                        }
+                       .img-490px{
+                        width: 240px;
+                       }
+                      
+                       /* .arrow,.arrow1{
+                        transform: scale(1);
+                       } */
+                        
+                        .angle-left-button,.angle-right-button,.angle-left-button1,.angle-right-button1{
+                         z-index: 8;
+                            opacity: 1;
+                            
+                         }
+                        .angle-left,.angle-left1{
+                            margin-top: 45px;
+                            margin-left: 10px;
+                        }
+                        .angle-left1{
+                            margin-top: 85px;
+                        }
+                        .angle-right,.angle-right1{
+                            margin-left: 780px;
+                           transform: translateY(-100%);
+                            
+                        }
+                        .angle-right1{
+                            transform: translateY(50%);
+                        }
+                        /* .angle-left:hover,.angle-left1:hover,.angle-right:hover,.angle-right1:hover{
+                            transform: scale(1);
+                            } */
+                        .movie-cards{
+                            margin-top: 70px;
+                        }
+                        .movie-cards1{
+                            margin-top: 100px;
+                        }
+                        .middle-wrapper{
+                            height: 50vh;
+                        }
+                        .title1{
+                            transform: translateY(450%);
+                        }}
+
+                        @media screen and (min-width:841px) and (max-width:880px) {
+                            .big-header-wrapper{
+                                background: linear-gradient(to bottom,rgba(0, 0, 0, 0.826) 0,rgba(0, 0, 0, 0.045) 60%,rgba(0, 0, 0, 0.085) 75%,rgba(0, 0, 0, 0.634) 100%),url(https://cdn.kayiprihtim.com/wp-content/uploads/2022/05/Spiderhead-fragman-758x403.jpg);
+                                background-repeat: no-repeat;
+                                background-attachment: fixed;
+                                background-size: cover;
+                                height: 50vh;
+                                
+                            }
+                           
+                            .movie-title{
+                                margin-top: 0;
+                            }
+                            .left-img{
+                                width: 50%;
+                            }
+                            .menu-div{
+                                display: flex;
+                            }
+                            .list-left{
+                                display: none;
+                            }
+                            .drop-new{
+                                transform: translateY(30%);
+                            }
+                            .content-input{
+                                position: absolute;
+                                transform: translate(-90%,-10%);
+                            }
+                            .button-search-display2{
+                             
+                                font-size: 5px;
+                                transform: translate(-500%,-10%);
+                                z-index: 2;
+                               
+                            }
+                            .explanation{
+                               font-size: 8px;
+                            }
+                            .drop-down-look{
+                                display: flex;
+                                cursor: pointer;
+                            }
+                            .drop-down-look p{
+                                color: white;
+                                font-size: 10px;
+                                margin-left: 5px;
+                                margin-top: 17px;
+                            }
+                            .drop-new{
+                                background: rgba(0, 0, 0, 0.9);
+                                width: 250px;
+                                display: flex;
+                                flex-direction: column;
+                                border-top: 1px solid white;
+                                position:absolute;
+                                display: none;
+                                
+                            }
+                            .drop-item{
+                                list-style-type: none;
+                                font-size: 14px;
+                                margin-left: -30px;
+                                white-space: nowrap;
+                                text-align: center;
+                                cursor: pointer;
+                             
+                            }
+                            .play-button{
+                                width:100px;
+                                height: 30px;
+                                font-size: 10px;
+                                
+                                text-align: center;
+                            }
+                           
+                            .show-more-info{
+                                width: 110px;
+                                height: 30px;
+                                white-space: nowrap;
+                                font-size: 8px;
+                                text-align: center;
+                            }
+                            .show-more-info i{
+                                font-size: 1rem;
+                            }
+                            .notifications{
+                                transform: translateX(90%);
+                                z-index: 10;
+                            }
+                            .accounts{
+                                transform: translateX(290%);
+                                z-index: 10;
+                            }
+                            .title{
+                                font-size: 10px;
+                            }
+                            .card1,.card2,.card3,.card4,.card5,.card6,
+                        .card7,.card8,.card9,.card10,.card11,.card12,
+                        .card13,.card14,.card15,.card16,.card17,.card18,
+                        .card19,.card20,.card21,.card22{
+                            margin-left: 10px;
+                            right: 0;
+                          
+                        }
+                        .card12,
+                        .card13,.card14,.card15,.card16,.card17,.card18,
+                        .card19,.card20,.card21,.card22{
+                            margin-top: 40px;
+                        }
+                            .card1-img,.card2-img,.card3-img,.card4-img,.card5-img,
+                            .card6-img, .card7-img, .card8-img, .card9-img,.card10-img,
+                            .card11-img, .card12-img, .card13-img,.card14-img,.card15-img,
+                            .card16-img, .card17-img, .card18-img,.card19-img,.card20-img,
+                            .card21-img,.card22-img{
+                                width: 200px;
+                            }
+                           .img-490px{
+                            width: 240px;
+                           }
+                          
+                           /* .arrow,.arrow1{
+                            transform: scale(1);
+                           } */
+                            
+                            .angle-left-button,.angle-right-button,.angle-left-button1,.angle-right-button1{
+                             z-index: 8;
+                                opacity: 1;
+                                
+                             }
+                            .angle-left,.angle-left1{
+                                margin-top: 45px;
+                                margin-left: 10px;
+                            }
+                            .angle-left1{
+                                margin-top: 85px;
+                            }
+                            .angle-right,.angle-right1{
+                                margin-left: 810px;
+                               transform: translateY(-100%);
+                                
+                            }
+                            .angle-right1{
+                                transform: translateY(50%);
+                            }
+                            /* .angle-left:hover,.angle-left1:hover,.angle-right:hover,.angle-right1:hover{
+                                transform: scale(1);
+                                } */
+                            .movie-cards{
+                                margin-top: 70px;
+                            }
+                            .movie-cards1{
+                                margin-top: 100px;
+                            }
+                            .middle-wrapper{
+                                height: 50vh;
+                            }
+                            .title1{
+                                transform: translateY(450%);
+                            }}
+
+                            @media screen and (min-width:881px) and (max-width:949px) {
+                                .big-header-wrapper{
+                                  
+                                    height: 50vh;
+                                    
+                                }
+                               
+                                .movie-title{
+                                    margin-top: 10px;
+                                }
+                                .left-img{
+                                    width: 60%;
+                                }
+                                .list-item{
+                                    white-space: nowrap;
+                                    margin-right: 10px;
+                                    font-size: 10px;
+                                    margin-top: 0;
+                                }
+                                
+                                .content-input{
+                                    position: absolute;
+                                    transform: translate(-90%,-10%);
+                                }
+                                .button-search-display2{
+                                 
+                                    font-size: 5px;
+                                    transform: translate(-500%,-10%);
+                                    z-index: 2;
+                                    
+                                   
+                                }
+                                .explanation{
+                                   font-size: 10px;
+                                }
+                                
+                                .drop-new{
+                             
+                                    display: none;
+                                    
+                                }
+                               
+                                .play-button{
+                                    width:100px;
+                                    height: 30px;
+                                    font-size: 10px;
+                                    
+                                    text-align: center;
+                                }
+                               
+                                .show-more-info{
+                                    width: 110px;
+                                    height: 30px;
+                                    white-space: nowrap;
+                                    font-size: 8px;
+                                    text-align: center;
+                                }
+                                .show-more-info i{
+                                    font-size: 1rem;
+                                }
+                                .notifications{
+                                    transform: translateX(90%);
+                                    z-index: 10;
+                                }
+                                .accounts{
+                                    transform: translateX(290%);
+                                    z-index: 10;
+                                }
+                                .title{
+                                    font-size: 10px;
+                                }
+                                .card1,.card2,.card3,.card4,.card5,.card6,
+                            .card7,.card8,.card9,.card10,.card11,.card12,
+                            .card13,.card14,.card15,.card16,.card17,.card18,
+                            .card19,.card20,.card21,.card22{
+                                margin-left: 10px;
+                                right: 0;
+                              
+                            }
+                            .card12,
+                            .card13,.card14,.card15,.card16,.card17,.card18,
+                            .card19,.card20,.card21,.card22{
+                                margin-top: 70px;
+                            }
+                                .card1-img,.card2-img,.card3-img,.card4-img,.card5-img,
+                                .card6-img, .card7-img, .card8-img, .card9-img,.card10-img,
+                                .card11-img, .card12-img, .card13-img,.card14-img,.card15-img,
+                                .card16-img, .card17-img, .card18-img,.card19-img,.card20-img,
+                                .card21-img,.card22-img{
+                                    width: 200px;
+                                }
+                               .img-490px{
+                                width: 240px;
+                               }
+                              
+                               /* .arrow,.arrow1{
+                                transform: scale(1);
+                               } */
+                                
+                                .angle-left-button,.angle-right-button,.angle-left-button1,.angle-right-button1{
+                                 z-index: 8;
+                                    opacity: 1;
+                                    
+                                 }
+                                .angle-left,.angle-left1{
+                                    margin-top: 45px;
+                                    margin-left: 10px;
+                                }
+                                .angle-left1{
+                                    margin-top: 105px;
+                                }
+                                .angle-right,.angle-right1{
+                                    margin-left: 810px;
+                                   transform: translateY(-100%);
+                                    
+                                }
+                                .angle-right1{
+                                    transform: translateY(100%);
+                                }
+                                /* .angle-left:hover,.angle-left1:hover,.angle-right:hover,.angle-right1:hover{
+                                    transform: scale(1);
+                                    } */
+                                .movie-cards{
+                                    margin-top: 70px;
+                                }
+                                .movie-cards1{
+                                    margin-top: 100px;
+                                }
+                                .middle-wrapper{
+                                    height: 50vh;
+                                }
+                                .title1{
+                                    transform: translateY(750%);
+                                }}
+
+                                @media screen and (min-width:950px) and (max-width:1200px){
+                                    .logo{
+                                        margin-top: 30px;
+                                    }
+                                    .list-item{
+                                        font-size: 12px;
+                                    }
+                                    .notifications{
+                                        transform: translateX(100%);
+                                    }
+                                    .accounts{
+                                        transform: translateX(320%);
+                                    }
+                                    .angle-right,.angle-right1{
+                                        margin-left: 910px;
+                                    }
+                                }
+                                @media screen and (min-width:1201px) and (max-width:1400px){
+                                    .angle-right,.angle-right1{
+                                        margin-left: 1100px;
+                                    }
+                                }

@@ -1,0 +1,296 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family:'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    overflow-x: hidden;
+}
+.fullPage{
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(to bottom,rgb(0, 0, 0) 0,rgba(0, 0, 0, 0.218) 60%,rgba(0, 0, 0, 0.185) 75%,rgba(0, 0, 0, 0.212) 100%),url(https://assets.nflxext.com/ffe/siteui/vlv3/5ea364b1-8e59-4693-8ad8-f0eaee32d1bf/8521927a-abf7-498a-9bda-de3c0ac9e526/TR-tr-20220530-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+.nav-bar{
+    width: 15%;
+}
+.logo{
+    width: 100%;
+    margin: 20px 0 0 20px;
+}
+.nav_logo{
+    width: 100%;
+}
+.card-new{
+    margin: auto;
+    width: 85%;
+}
+.card{
+    margin: auto;
+    background-color: rgba(0,0,0,.75) !important;
+    width: 35%!important;
+    height: 85vh!important;
+}
+.card-body{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: start;
+}
+.card-title{
+    color: white;
+    margin-left: 12px;
+    font-size: 32px;
+}
+.remember-div{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+.remember-inputs{
+    display: flex;
+    justify-content: space-between;
+    width: 89%!important;
+}
+.help-div{
+    
+    margin-top: 3px;
+}
+.rememberMe,.help{
+    color: #737373;
+    font-size: 13px;
+}
+.help{
+    cursor: pointer;
+    transform: translateY(10%);
+}
+.remember{
+    color: #737373;
+    
+}
+.rememberMe{
+    transform: translate(10%,-10%);
+}
+.help:hover{
+    text-decoration: underline;
+}
+.e-mail-div,.password-div{
+    width: 90%;
+    margin-bottom: 15px;
+    position: relative;
+}
+.email,.password{
+    background-color: rgb(34, 34, 34);
+    outline: none;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    font-family: inherit;
+    padding: 16px 20px 0 20px;
+    height: 50px;
+    font-size: 12px;
+    color: #ffffff;
+}
+.label{
+box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  left: 20px;
+  font-size: 14px;
+  cursor: text;
+  color: #8c8c8c;
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease,
+    -webkit-transform 0.1s ease, -moz-transform 0.1s ease,
+    -o-transform 0.1s ease;
+}
+.email:focus ~ .label,
+.password:focus ~ .label{
+    font-size: 11px;
+    top: 7px;
+}
+
+.login-div,.login{
+    width: 94.7%;
+}
+.login{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 50px;
+    background-color: red;
+    color: white;
+}
+.sign-p,.google,.non-visible{
+    color: #737373;
+}
+.sign-p a{
+    color: white;
+    text-decoration: none;
+}
+.google{
+    font-size: 13px;
+}
+.finding-link{
+    cursor: pointer;
+    color: blue;
+}
+.non-visible{
+    display: none;
+    font-size: 13px;
+}
+.footer{
+    
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.819) 0,rgba(0, 0, 0, 0.703) 60%,rgba(0, 0, 0, 0.737) 75%,rgba(0, 0, 0, 0.759) 100%);
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    
+}
+.footer-list{
+    margin-top: 20px;
+}
+.footer-p,.list-item{
+    color: #757575;
+}
+.footer-p-div{
+    margin-left: 60px;
+    margin-top: 20px;
+    
+}
+.telefon:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.list{
+    list-style-type: none;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-left: 30px;
+}
+.list-item{
+    font-size: 13px;
+    cursor: pointer;
+}
+.list-item:hover{
+    text-decoration: underline;
+}
+.language-options{
+    background:none;
+    margin-left: 10px;
+    color: #757575;
+    appearance: none;
+    border: 1px solid #757575;
+    border-radius: 2px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 1.375rem; 
+    padding-right: 1.375rem;
+    line-height: 1.3em;
+    font-size: .75rem;
+    text-align: center;
+    transform: translateY(10%);
+    margin-left: 40px;
+    background-image:
+    linear-gradient(45deg, transparent 50%, #757575 50%),
+    linear-gradient(135deg, #757575 50%, transparent 50%);
+    /* radial-gradient(#ddd 70%, transparent 72%); */
+  background-position:
+    calc(100% - 10px) calc(1.1em + 2px),
+    calc(100% - 5px) calc(1.1em + 2px),
+    calc(100% - .3em) .3em;
+   
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+
+}
+.fa-globe{
+    font-size:.9rem;
+    transform: translate(450%,25%);
+    color: #757575;
+}
+.list-item,.rememberMe,.help{
+    white-space: nowrap;
+}
+
+@media screen and (min-width:376px) and (max-width:768px) {
+    .fullPage{
+        background: black;
+        height: 120vh;
+    }
+    .nav-bar{
+        width: 25%;
+    }
+    .card-new{
+        width: 100%;
+        margin-top:70px;
+    }
+    .card{
+        width:100%!important;
+        height: 70vh!important;
+        border-bottom: 2px solid #757575!important;
+        margin-left: 20px;
+
+    }
+    .card-title{
+        margin-left: 20px!important;
+    }
+    
+    .help,.remember{
+        white-space: nowrap;
+    }
+    .remember-div{
+        margin-left: 10px;
+    }
+    .remember{
+        transform: translate(-50%,20%);
+    }
+    .sign-up{
+        margin-left: 20px;
+    }
+    .list{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .list-item{
+        white-space: nowrap;
+    }
+    .google{
+        width: 80%;
+    }
+    .footer{
+        margin-top: 50px;
+        background-color: black!important;
+        
+    }
+}
+@media screen and (min-width:769px) and (max-width:1300px) {
+    .nav-bar{
+        width: 25%;
+    }
+    
+    .card{
+        width: 50%!important;
+        
+    }
+    
+    .google{
+        width: 85%;
+    }
+    .sign-up{
+        margin-left: 20px;
+    }
+    
+    
+}

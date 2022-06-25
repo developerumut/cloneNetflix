@@ -1,0 +1,16 @@
+$('.img1').hover(function(){
+    $('.account-text1').toggleClass('hover-text')
+    $('.img1').toggleClass('imgshover')
+})
+$('.img2').hover(function(){
+    $('.account-text2').toggleClass('hover-text')
+    $('.img2').toggleClass('imgshover')
+})
+$('.img3').hover(function(){
+    $('.account-text3').toggleClass('hover-text')
+    $('.img3').toggleClass('imgshover')
+})
+$('.img4').hover(function(){
+    $('.account-text4').toggleClass('hover-text')
+    $('.img4').toggleClass('imgshover')
+})

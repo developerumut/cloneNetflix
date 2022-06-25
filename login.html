@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="/Netflix_Project/stylelogin.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/3e1f83c8b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+    <div class="fullPage">
+       <div class="nav-bar"> <div class="logo">
+            <img class="nav_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="Netflix Logo">
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-new">
+            <h5 class="card-title">Oturum Aç</h5>
+            <div class="card-body">
+            <div class="e-mail-div">
+                <input type="text" class="email" name="email" id="email">
+                <label for="email" class="label">E-posta veya telefon numarası</label>
+            </div> 
+            <div class="password-div">
+                <input type="password" class="password" name="password" id="password">
+                <label for="password" class="label">Parola</label>
+            </div> 
+             <div class="login-div">
+                <form action="/Netflix_Project/accountPage.html" style="text-decoration:none;color: white;"><button class="login">Oturum Aç</button></form>   
+             </div>
+             <div class="remember-inputs">
+             <div class="remember-div">
+                
+                    <input type="checkbox" class="remember" name="remember" id="remember" checked>
+                    <label for="remember" class="rememberMe">Beni Hatırla</label>
+                </div>
+               <div class="help-div">
+                <p class="help">Yardım ister misiniz?</p>
+               </div>
+            
+             
+            </div>
+            </div>
+             <div class="sign-up">
+                <p class="sign-p">Netflix'e katılmak ister misiniz? <a href="signlink">Şimdi kaydolun.</a></p>
+                <p class="google">Bu sayfa robot olmadığınızı kanıtlamak için Google reCAPTCHA tarafından korunuyor. <span class="finding-link">Daha fazlasını öğrenin. </span> </p>
+                <p class="non-visible">
+                    Google reCAPTCHA tarafından toplanan bilgiler Google'ın <a href="https://policies.google.com/privacy" target="_blank">Gizlilik Politikası</a> ve <a href="https://policies.google.com/terms" target="_blank">Hizmet Şartları</a> 'na tabidir. Bu bilgiler reCAPTCHA hizmetinin sağlanması, sürdürülmesi, geliştirilmesi ve genel hizmet amaçları için kullanılır (Google tarafından kişiselleştirilmiş reklamlar sunmak için kullanılmaz).
+                </p>
+             </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-p-div">
+                <p class="footer-p">
+                    Sorularınız mı var? <span class="telefon">0850-390-7444</span> numaralı telefonu arayın
+                </p>
+            </div>
+            <div class="footer-list">
+                <ul class="list">
+                    <li class="list-item">SSS</li>
+                    <li class="list-item">Yardım Merkezi</li>
+                    <li class="list-item">Kullanım Koşulları</li>
+                    <li class="list-item">Gizlilik</li>
+                    <li class="list-item">Çerez Tercihleri</li>
+                    <li class="list-item">Kurumsal Bilgiler</li>
+                </ul>
+            </div>
+            <div class="footer-language">
+                <label for="select2" class="globe"><i class="fa-solid fa-globe globe-color footer-globe"></i></label>
+                <select name="select2" id="select2" class="language-options language-select language-footer">
+                    <option value="" class="language-option">Türkçe</option>
+                    <option value="" class="language-option">English</option>
+                </select>
+            </div>
+          </div>
+    </div>
+      </div>
+      
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="/Netflix_Project/login.js"></script>
+</body>
+</html>
